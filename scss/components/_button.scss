@@ -1,0 +1,27 @@
+.c-button {
+    border: 1px solid rgba(0, 107, 28, 0.3);
+    background: #04f700;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Arial", sans-serif;
+    transition: all .2s linear;
+    cursor: pointer;
+
+    &:hover {
+        background: rgba(0, 107, 28, 0.9);
+        color: #fff;
+    }
+
+    &--red {
+        background: #da4141;
+        color: #fff;
+
+        &:hover {
+            background: #b32626;
+            color: #fff;
+        }
+    }
+}

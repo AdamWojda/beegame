@@ -1,0 +1,71 @@
+.m-game {
+
+    &__intro {
+        text-align: center;
+
+        &__heading {
+            font-size: 35px;
+            font-family: "Arial", sans-serif;
+            font-weight: 700;
+            margin: 20px 0;
+        }
+
+        &__desc {
+            font-weight: 300;
+            font-size: 17px;
+            font-family: "Helvetica", sans-serif;
+            margin: 20px 0;
+        }
+    }
+
+    &__bees {
+        font-size: 0;
+        text-align: center;
+    }
+
+    &__bee {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 14px;
+        margin: 20px 0;
+        text-align: center;
+
+        &.queen {
+            width: 100%;
+            margin: 70px 0 20px;
+        }
+
+        &.worker {
+            width: 20%;
+            margin: 40px 0;
+        }
+
+        &.drone {
+            width: 25%;
+        }
+
+        &__name {
+            font-family: "Arial";
+            font-size: 15px;
+        }
+
+        &__life {
+            display: inline-block;
+            border-bottom: 2px solid #da4141;
+            margin: 5px 0;
+            padding: 2px 5px;
+            font-weight: 600;
+            font-family: "Arial";
+            font-size: 17px;
+        }
+    }
+
+    &__hit {
+        text-align: center;
+
+        &__button {
+            margin-top: 40px;
+        }
+    }
+
+}

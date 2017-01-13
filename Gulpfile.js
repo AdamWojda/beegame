@@ -6,6 +6,7 @@ var gulp         = require('gulp'),
     imagemin     = require('gulp-imagemin'),
     uglify       = require('gulp-uglify'),
     concat       = require('gulp-concat'),
+    notify       = require('gulp-notify'),
     pngquant     = require('imagemin-pngquant');
 
 gulp.task('generate_styles', function(){
@@ -16,8 +17,7 @@ gulp.task('generate_styles', function(){
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(gulp.dest('./css/'))
-        .pipe(notify('SASS Compiled and Prefixed'));
+        .pipe(gulp.dest('./css/'));
 
     gulp.src('scss/**/*.scss')
         .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))

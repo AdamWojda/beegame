@@ -14,69 +14,19 @@
 @import 'generic/reset';
 
 // Element selectors, without classes
-@import 'elements/base',
-        'elements/text',
-        'elements/keyframes';
+//@import 'elements/base';
 
 // Layouts
-@import 'layout/container',
-        'layout/header',
-        'layout/footer';
+@import 'layout/container';
 
 // Components
-@import 'components/button',
-        'components/title',
-        'components/input',
-        'components/icon',
-        'components/list',
-        'components/link';
-
-// Widgets
-// @import 'widgets/tags',
-//         'widgets/contact',
-//         'widgets/range-slider',
-//         'widgets/chart';
+@import 'components/button';
 
 // Modules
-// @import 'module/nav',
-//         'module/logo',
-//         'module/article',
-//         'module/back-up',
-//         'module/sidebar',
-//         'module/footer',
-//         'module/tabs',
-//         'module/theme-picker',
-//         'module/font-sizer',
-//         'module/slider',
-//         'module/checkout',
-//         'module/checkbox-list',
-//         'module/breadcrumb',
-//         'module/404',
-//         'module/short-info',
-//         'module/filter',
-//         'module/tools',
-//         'module/text',
-//         'module/my-account',
-//         'module/user-links',
-//         'module/search',
-//         'module/signup',
-//         'module/cart',
-//         'module/versions',
-//         'module/languages',
-//         'module/top-title',
-//         'module/social-small',
-//         'module/pagination';
-
-// Modules
-// @import 'theme/yellow',
-//         'theme/yellow-black',
-//         'theme/black',
-//         'theme/white';
+@import 'module/game';
 
 // States
-// @import 'state/is-active',
-//         'state/is-inactive',
-//         'state/is-hidden';
+// @import 'state/is-active';
 
 /* ==================================================================================================== */
 /* External CSS
@@ -84,6 +34,3 @@
 
 // Vendor
 @import 'vendor/bootstrap';
-
-// Keyframes last
-//@import 'settings/keyframes';

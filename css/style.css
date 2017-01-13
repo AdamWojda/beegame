@@ -1,39 +1,3 @@
-@charset "UTF-8";
-/* ==================================================================================================== */
-/* Font icons
-/* ==================================================================================================== */
-@font-face { font-family: "FontAwesome"; font-weight: normal; font-style: normal; src: url("../fonts/fontawesome-webfont.eot?") format("eot"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url('../fonts/fontawesome-webfont.svg#str-replace("FontAwesome", " ", "_")') format("svg"); }
-
-@font-face { font-family: "GlyphIcons"; font-weight: normal; font-style: normal; src: url("../fontsglyphicons-halflings-regular.eot?") format("eot"), url("../fontsglyphicons-halflings-regular.woff") format("woff"), url("../fontsglyphicons-halflings-regular.woff2") format("woff2"), url("../fontsglyphicons-halflings-regular.ttf") format("truetype"), url('../fontsglyphicons-halflings-regular.svg#str-replace("GlyphIcons", " ", "_")') format("svg"); }
-
-@font-face { font-family: "MaterialDesignIcons"; font-weight: normal; font-style: normal; src: url("../fonts/materialdesignicons-webfont.eot?") format("eot"), url("../fonts/materialdesignicons-webfont.woff") format("woff"), url("../fonts/materialdesignicons-webfont.woff2") format("woff2"), url("../fonts/materialdesignicons-webfont.ttf") format("truetype"), url('../fonts/materialdesignicons-webfont.svg#str-replace("MaterialDesignIcons", " ", "_")') format("svg"); }
-
-/* ==================================================================================================== */
-/* Encode Sans Wide
-/* ==================================================================================================== */
-@font-face { font-family: "EncodeSansWide-black"; font-weight: normal; font-style: normal; src: url("../fonts/EncodeSansWide-Black.eot?") format("eot"), url("../fonts/EncodeSansWide-Black.woff") format("woff"), url("../fonts/EncodeSansWide-Black.woff2") format("woff2"), url("../fonts/EncodeSansWide-Black.ttf") format("truetype"), url('../fonts/EncodeSansWide-Black.svg#str-replace("EncodeSansWide-black", " ", "_")') format("svg"); }
-
-@font-face { font-family: "EncodeSansWide-bold"; font-weight: normal; font-style: normal; src: url("../fonts/EncodeSansWide-Bold.eot?") format("eot"), url("../fonts/EncodeSansWide-Bold.woff") format("woff"), url("../fonts/EncodeSansWide-Bold.woff2") format("woff2"), url("../fonts/EncodeSansWide-Bold.ttf") format("truetype"), url('../fonts/EncodeSansWide-Bold.svg#str-replace("EncodeSansWide-bold", " ", "_")') format("svg"); }
-
-@font-face { font-family: "EncodeSansWide-extrabold"; font-weight: normal; font-style: normal; src: url("../fonts/EncodeSansWide-ExtraBold.eot?") format("eot"), url("../fonts/EncodeSansWide-ExtraBold.woff") format("woff"), url("../fonts/EncodeSansWide-ExtraBold.woff2") format("woff2"), url("../fonts/EncodeSansWide-ExtraBold.ttf") format("truetype"), url('../fonts/EncodeSansWide-ExtraBold.svg#str-replace("EncodeSansWide-extrabold", " ", "_")') format("svg"); }
-
-@font-face { font-family: "EncodeSansWide-extralight"; font-weight: normal; font-style: normal; src: url("../fonts/EncodeSansWide-ExtraLight.eot?") format("eot"), url("../fonts/EncodeSansWide-ExtraLight.woff") format("woff"), url("../fonts/EncodeSansWide-ExtraLight.woff2") format("woff2"), url("../fonts/EncodeSansWide-ExtraLight.ttf") format("truetype"), url('../fonts/EncodeSansWide-ExtraLight.svg#str-replace("EncodeSansWide-extralight", " ", "_")') format("svg"); }
-
-@font-face { font-family: "EncodeSansWide-light"; font-weight: normal; font-style: normal; src: url("../fonts/EncodeSansWide-Light.eot?") format("eot"), url("../fonts/EncodeSansWide-Light.woff") format("woff"), url("../fonts/EncodeSansWide-Light.woff2") format("woff2"), url("../fonts/EncodeSansWide-Light.ttf") format("truetype"), url('../fonts/EncodeSansWide-Light.svg#str-replace("EncodeSansWide-light", " ", "_")') format("svg"); }
-
-@font-face { font-family: "EncodeSansWide-medium"; font-weight: normal; font-style: normal; src: url("../fonts/EncodeSansWide-Medium.eot?") format("eot"), url("../fonts/EncodeSansWide-Medium.woff") format("woff"), url("../fonts/EncodeSansWide-Medium.woff2") format("woff2"), url("../fonts/EncodeSansWide-Medium.ttf") format("truetype"), url('../fonts/EncodeSansWide-Medium.svg#str-replace("EncodeSansWide-medium", " ", "_")') format("svg"); }
-
-@font-face { font-family: "EncodeSansWide-regular"; font-weight: normal; font-style: normal; src: url("../fonts/EncodeSansWide-Regular.eot?") format("eot"), url("../fonts/EncodeSansWide-Regular.woff") format("woff"), url("../fonts/EncodeSansWide-Regular.woff2") format("woff2"), url("../fonts/EncodeSansWide-Regular.ttf") format("truetype"), url('../fonts/EncodeSansWide-Regular.svg#str-replace("EncodeSansWide-regular", " ", "_")') format("svg"); }
-
-@font-face { font-family: "EncodeSansWide-semibold"; font-weight: normal; font-style: normal; src: url("../fonts/EncodeSansWide-SemiBold.eot?") format("eot"), url("../fonts/EncodeSansWide-SemiBold.woff") format("woff"), url("../fonts/EncodeSansWide-SemiBold.woff2") format("woff2"), url("../fonts/EncodeSansWide-SemiBold.ttf") format("truetype"), url('../fonts/EncodeSansWide-SemiBold.svg#str-replace("EncodeSansWide-semibold", " ", "_")') format("svg"); }
-
-@font-face { font-family: "EncodeSansWide-thin"; font-weight: normal; font-style: normal; src: url("../fonts/EncodeSansWide-Thin.eot?") format("eot"), url("../fonts/EncodeSansWide-Thin.woff") format("woff"), url("../fonts/EncodeSansWide-Thin.woff2") format("woff2"), url("../fonts/EncodeSansWide-Thin.ttf") format("truetype"), url('../fonts/EncodeSansWide-Thin.svg#str-replace("EncodeSansWide-thin", " ", "_")') format("svg"); }
-
-/* ==================================================================================================== */
-/* Encode Sans Narrow
-/* ==================================================================================================== */
-@font-face { font-family: "EncodeSansNarrow-regular"; font-weight: normal; font-style: normal; src: url("../fonts/EncodeSansNarrow-Regular.eot?") format("eot"), url("../fonts/EncodeSansNarrow-Regular.woff") format("woff"), url("../fonts/EncodeSansNarrow-Regular.woff2") format("woff2"), url("../fonts/EncodeSansNarrow-Regular.ttf") format("truetype"), url('../fonts/EncodeSansNarrow-Regular.svg#str-replace("EncodeSansNarrow-regular", " ", "_")') format("svg"); }
-
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; font: inherit; font-size: 100%; }
 
 /* HTML5 display-role reset for older browsers */
@@ -49,137 +13,43 @@ blockquote:before, blockquote:after, q:before, q:after { content: ''; content: n
 
 table { border-spacing: 0; border-collapse: collapse; }
 
-html { -webkit-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 62.5%; }
+.l-container { position: relative; margin: 0 auto; display: block; }
 
-body { overflow-x: hidden; font-size: 14px; font-size: 1.4rem; }
+.l-container--inner { max-width: 1024px; }
 
-input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px #000 inset; -webkit-text-fill-color: #fff !important; }
+.l-container--game { max-width: 400px; }
 
-img { max-width: 100%; }
+.c-button { border: 1px solid rgba(0, 107, 28, 0.3); background: #04f700; border-radius: 5px; display: inline-block; padding: 10px 20px; text-decoration: none; text-transform: uppercase; font-family: "Arial", sans-serif; transition: all .2s linear; cursor: pointer; }
 
-* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -ms-box-sizing: border-box; }
+.c-button:hover { background: rgba(0, 107, 28, 0.9); color: #fff; }
 
-::-moz-selection { background: #0094e0; color: #fff; }
+.c-button--red { background: #da4141; color: #fff; }
 
-::selection { background: #0094e0; color: #fff; }
+.c-button--red:hover { background: #b32626; color: #fff; }
 
-.clearfix:before, .clearfix:after { display: table; content: ''; }
+.m-game__intro { text-align: center; }
 
-.clearfix:after { clear: both; }
+.m-game__intro__heading { font-size: 35px; font-family: "Arial", sans-serif; font-weight: 700; margin: 20px 0; }
 
-.clearfix { zoom: 1; }
+.m-game__intro__desc { font-weight: 300; font-size: 17px; font-family: "Helvetica", sans-serif; margin: 20px 0; }
 
-blockquote { font-family: 'EncodeSansWide-semibold'; font-weight: 600; padding: 0 90px; padding: 0 9rem; margin: 50px 0; margin: 5rem 0; line-height: 1.6; position: relative; }
+.m-game__bees { font-size: 0; text-align: center; }
 
-blockquote::before { content: "\201D"; font-size: 6rem; position: absolute; left: 26px; top: 52px; line-height: 0; color: #cecece; }
+.m-game__bee { display: inline-block; vertical-align: middle; font-size: 14px; margin: 20px 0; text-align: center; }
 
-blockquote::after { content: "\201C"; font-size: 6rem; position: absolute; right: 38px; top: 24px; line-height: 0; color: #cecece; }
+.m-game__bee.queen { width: 100%; margin: 70px 0 20px; }
 
-/*
-* @name Container
-* @section Layouts
-* @description
-*  Site conteners
-*/
-.l-container { margin: 0 auto; position: relative; }
+.m-game__bee.worker { width: 20%; margin: 40px 0; }
 
-.l-container:before, .l-container:after { display: table; content: ''; }
+.m-game__bee.drone { width: 25%; }
 
-.l-container:after { clear: both; }
+.m-game__bee__name { font-family: "Arial"; font-size: 15px; }
 
-.l-container { zoom: 1; }
+.m-game__bee__life { display: inline-block; border-bottom: 2px solid #da4141; margin: 5px 0; padding: 2px 5px; font-weight: 600; font-family: "Arial"; font-size: 17px; }
 
-/*
-* @name Nagłówek
-* @section Layouty
-* @description
-*  Headers
-*/
-/*
-* @name Footer
-* @section Layouts
-* @description
-*  Footers
-*/
-/*
-* @name Przyciski
-* @section Modules
-* @description
-*  All buttons.
-*/
-/*
-* @name Headings
-* @section Moduły
-* @description
-*  Wszystkie nagłowki na stronie
-*/
-.m-title--theme-h1 { font-size: 35px; font-size: 3.5rem; font-family: 'EncodeSansWide-bold'; font-weight: 700; }
+.m-game__hit { text-align: center; }
 
-.m-title--theme-h2 { font-size: 33px; font-size: 3.3rem; font-family: 'EncodeSansWide-regular'; font-weight: 400; }
-
-.m-title--theme-h3 { font-size: 27px; font-size: 2.7rem; font-family: 'EncodeSansWide-bold'; font-weight: 700; }
-
-.m-title--theme-h4 { font-size: 25px; font-size: 2.5rem; font-family: 'EncodeSansWide-regular'; font-weight: 400; }
-
-.m-title--theme-h5 { font-size: 20px; font-size: 2rem; font-family: 'EncodeSansWide-bold'; font-weight: 700; }
-
-.m-title--theme-h6 { font-size: 15px; font-size: 1.5rem; font-family: 'EncodeSansWide-bold'; font-weight: 700; }
-
-.m-title--size-medium { font-size: 24px; font-size: 2.4rem; }
-
-.m-title--size-small { font-size: 17px; font-size: 1.7rem; }
-
-.m-title--font-thin { font-family: 'EncodeSansWide-thin'; font-weight: 100; }
-
-.m-title--font-extralight { font-family: 'EncodeSansWide-extralight'; font-weight: 200; }
-
-.m-title--font-light { font-family: 'EncodeSansWide-light'; font-weight: 300; }
-
-.m-title--font-regular { font-family: 'EncodeSansWide-regular'; font-weight: 400; }
-
-.m-title--font-medium { font-family: 'EncodeSansWide-medium'; font-weight: 500; }
-
-.m-title--font-semibold { font-family: 'EncodeSansWide-semibold'; font-weight: 600; }
-
-.m-title--font-bold { font-family: 'EncodeSansWide-bold'; font-weight: 700; }
-
-.m-title--font-extrabold { font-family: 'EncodeSansWide-extrabold'; font-weight: 800; }
-
-.m-title--line { font-family: 'EncodeSansWide-bold'; position: relative; padding-bottom: 15px; margin-bottom: 41px; text-transform: uppercase; }
-
-.m-title--line::after { content: ""; width: 55px; height: 3px; background: #0094e0; position: absolute; left: -2px; bottom: 0; z-index: 1; }
-
-.m-title--center { text-align: center; }
-
-.m-title--right { text-align: right; }
-
-.m-title--left { text-align: left; }
-
-.m-input__text { width: 100%; border: 1px solid #ccc; border-radius: 4px; display: block; padding: 11px; }
-
-.m-input--half { font-size: 0; }
-
-.m-input--half .m-input__element { display: -moz-inline-stack; display: inline-block; zoom: 1; *display: inline; font-size: 14px; font-size: 1.4rem; padding-right: 8px; padding-right: 0.8rem; width: 50%; }
-
-.m-input--half .m-input__element:nth-of-type(2n+2) { padding-left: 8px; padding-left: 0.8rem; padding-right: 0; }
-
-.m-input--block-label .m-input__label { display: block; margin-bottom: 10px; }
-
-.m-input--block-label .m-input__text { margin-top: 10px; }
-
-/* ==================================================================================================== */
-/* List skeleton
-/* ==================================================================================================== */
-.c-list { font-size: 0; }
-
-.c-list--inline .c-list__element { font-size: 14px; font-size: 1.4rem; display: -moz-inline-stack; display: inline-block; zoom: 1; *display: inline; vertical-align: middle; margin-right: 5px; margin-right: 0.5rem; }
-
-.c-list--inline .c-list__element:last-of-type { margin-right: 0; }
-
-/* ==================================================================================================== */
-/* Link module
-/* ==================================================================================================== */
-.link-absolute { position: absolute; top: 0; left: 0; z-index: 10; width: 100%; height: 100%; font-size: 0; }
+.m-game__hit__button { margin-top: 40px; }
 
 /* ==================================================================================================== */
 /* External CSS

@@ -1,0 +1,22 @@
+<!-- Game view -->
+<div class="m-game__view l-container l-container--game">
+
+  <div class="m-game__bees" ng-init="initFunction()">
+
+    <div class="m-game__bee" ng-repeat="item in array" ng-class="item.type">
+
+      <div class="m-game__bee__name">{{item.type | capitalize}}</div> <div class="m-game__bee__life">({{item.lifespan}}/{{item.maxlifespan}})</div>
+
+    </div>
+
+  </div>
+
+  <div class="m-game__hit">
+
+      <div class="m-game__hit__button c-button c-button--red" ng-click="hitRandom()">Hit Them!</div>
+
+  </div>
+
+</div>
+
+<!-- /Game View -->

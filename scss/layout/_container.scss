@@ -1,0 +1,13 @@
+.l-container {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+
+    &--inner  {
+        max-width: 1024px;
+    }
+
+    &--game {
+        max-width: 400px;
+    }
+}
