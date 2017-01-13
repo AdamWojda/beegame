@@ -1,0 +1,89 @@
+//compileOnSave: true, compileCompact, compactFilenamePattern: ../css/$1.css
+
+@charset 'UTF-8';
+
+// Variables
+@import 'settings/colors';
+
+// Mixins, functions, tools
+@import 'tools/mixins',
+        'tools/fonts',
+        'tools/family';
+
+// Generic like reset or normalize
+@import 'generic/reset';
+
+// Element selectors, without classes
+@import 'elements/base',
+        'elements/text',
+        'elements/keyframes';
+
+// Layouts
+@import 'layout/container',
+        'layout/header',
+        'layout/footer';
+
+// Components
+@import 'components/button',
+        'components/title',
+        'components/input',
+        'components/icon',
+        'components/list',
+        'components/link';
+
+// Widgets
+// @import 'widgets/tags',
+//         'widgets/contact',
+//         'widgets/range-slider',
+//         'widgets/chart';
+
+// Modules
+// @import 'module/nav',
+//         'module/logo',
+//         'module/article',
+//         'module/back-up',
+//         'module/sidebar',
+//         'module/footer',
+//         'module/tabs',
+//         'module/theme-picker',
+//         'module/font-sizer',
+//         'module/slider',
+//         'module/checkout',
+//         'module/checkbox-list',
+//         'module/breadcrumb',
+//         'module/404',
+//         'module/short-info',
+//         'module/filter',
+//         'module/tools',
+//         'module/text',
+//         'module/my-account',
+//         'module/user-links',
+//         'module/search',
+//         'module/signup',
+//         'module/cart',
+//         'module/versions',
+//         'module/languages',
+//         'module/top-title',
+//         'module/social-small',
+//         'module/pagination';
+
+// Modules
+// @import 'theme/yellow',
+//         'theme/yellow-black',
+//         'theme/black',
+//         'theme/white';
+
+// States
+// @import 'state/is-active',
+//         'state/is-inactive',
+//         'state/is-hidden';
+
+/* ==================================================================================================== */
+/* External CSS
+/* ==================================================================================================== */
+
+// Vendor
+@import 'vendor/bootstrap';
+
+// Keyframes last
+//@import 'settings/keyframes';

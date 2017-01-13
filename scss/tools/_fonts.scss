@@ -1,0 +1,113 @@
+// main: /xampp/htdocs/multiszablon/scss/style.scss
+
+/* ==================================================================================================== */
+/* Font icons
+/* ==================================================================================================== */
+@include font-face('FontAwesome', '../fonts/fontawesome-webfont', normal, normal);
+@include font-face('GlyphIcons', '../fontsglyphicons-halflings-regular', normal, normal);
+@include font-face('MaterialDesignIcons', '../fonts/materialdesignicons-webfont', normal, normal);
+
+/* ==================================================================================================== */
+/* Encode Sans Wide
+/* ==================================================================================================== */
+@include font-face('EncodeSansWide-black', '../fonts/EncodeSansWide-Black', normal, normal);
+@include font-face('EncodeSansWide-bold', '../fonts/EncodeSansWide-Bold', normal, normal);
+@include font-face('EncodeSansWide-extrabold', '../fonts/EncodeSansWide-ExtraBold', normal, normal);
+@include font-face('EncodeSansWide-extralight', '../fonts/EncodeSansWide-ExtraLight', normal, normal);
+@include font-face('EncodeSansWide-light', '../fonts/EncodeSansWide-Light', normal, normal);
+@include font-face('EncodeSansWide-medium', '../fonts/EncodeSansWide-Medium', normal, normal);
+@include font-face('EncodeSansWide-regular', '../fonts/EncodeSansWide-Regular', normal, normal);
+@include font-face('EncodeSansWide-semibold', '../fonts/EncodeSansWide-SemiBold', normal, normal);
+@include font-face('EncodeSansWide-thin', '../fonts/EncodeSansWide-Thin', normal, normal);
+
+/* ==================================================================================================== */
+/* Encode Sans Narrow
+/* ==================================================================================================== */
+@include font-face('EncodeSansNarrow-regular', '../fonts/EncodeSansNarrow-Regular', normal, normal);
+
+// Set the font face with an optional font weight. The default font weight is 400.
+//
+// @mixin
+// @section Fonts
+// @param $weight
+//  The font weight to be used.
+// @example
+//  @include encodesans();
+//  @include encodesans(300);
+
+@mixin encodesans ( $weight : 400, $type : 'wide' ) {
+    @if $type == 'wide' {
+
+        @if $weight == 100 {
+            font-family: 'EncodeSansWide-thin';
+            font-weight: 100;
+        }
+        @if $weight == 200 {
+            font-family: 'EncodeSansWide-extralight';
+            font-weight: 200;
+        }
+        @if $weight == 300 {
+            font-family: 'EncodeSansWide-light';
+            font-weight: 300;
+        }
+        @if $weight == 400 {
+            font-family: 'EncodeSansWide-regular';
+            font-weight: 400;
+        }
+        @if $weight == 500 {
+            font-family: 'EncodeSansWide-medium';
+            font-weight: 500;
+        }
+        @if $weight == 600 {
+            font-family: 'EncodeSansWide-semibold';
+            font-weight: 600;
+        }
+        @if $weight == 700 {
+            font-family: 'EncodeSansWide-bold';
+            font-weight: 700;
+        }
+        @if $weight == 800 {
+            font-family: 'EncodeSansWide-extrabold';
+            font-weight: 800;
+        }
+        @if $weight == 900 {
+            font-family: 'EncodeSansWide-black';
+            font-weight: 900;
+        }
+
+    }
+
+    @if $type == 'narrow' {
+
+
+        // @if $weight == 100 {
+        //     font-family: 'EncodeSansNarrow-thin';
+        // }
+        // @if $weight == 200 {
+        //     font-family: 'EncodeSansNarrow-extralight';
+        // }
+        // @if $weight == 300 {
+        //     font-family: 'EncodeSansNarrow-light';
+        // }
+        @if $weight == 400 {
+            font-family: 'EncodeSansNarrow-regular';
+        }
+        // @if $weight == 500 {
+        //     font-family: 'EncodeSansNarrow-medium';
+        // }
+        // @if $weight == 600 {
+        //     font-family: 'EncodeSansNarrow-semibold';
+        // }
+        // @if $weight == 700 {
+        //     font-family: 'EncodeSansNarrow-bold';
+        // }
+        // @if $weight == 800 {
+        //     font-family: 'EncodeSansNarrow-extrabold';
+        // }
+        // @if $weight == 900 {
+        //     font-family: 'EncodeSansNarrow-black';
+        // }
+
+    }
+
+}
