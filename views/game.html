@@ -1,7 +1,7 @@
 <!-- Game view -->
-<div class="m-game__view l-container l-container--game">
+<div class="m-game__view l-container l-container--game" ng-init="initFunction()">
 
-  <div class="m-game__bees" ng-init="initFunction()">
+  <div class="m-game__bees" >
 
     <div class="m-game__bee m-game__bee--{{ $index }}" ng-repeat="item in beeList track by $index" ng-class="item.type">
 
@@ -10,7 +10,7 @@
           <div class="m-game__bee__body__line"></div>
 
         </div>
-        
+
         <div class="m-game__bee__wings">
 
           <div class="m-game__bee__wing--right"></div>

@@ -80,16 +80,12 @@
 
         var previousBeeList = [];
 
-        var getRandomNumber = function() {
-            return Math.floor((Math.random() * $scope.beeList.length));
-        };
-
         var updatePreviousList = function(newBeeList) {
             angular.copy(newBeeList, previousBeeList);
         };
 
         var updateClass = function(index) {
-
+            alert(index);
             $('.m-game__bee--' + index).addClass('active');
 
             $timeout( function(){
@@ -105,6 +101,8 @@
             $scope.beesInit = createBees(beeService);
 
             $scope.beeList = beeService.getBees();
+            
+            updatePreviousList($scope.beeList);
 
         };
 
@@ -120,8 +118,8 @@
                     var changedBee = newVal[i],
                         index = newVal.indexOf(changedBee);
 
-                    updateClass(index);
                     updatePreviousList(newVal);
+                    updateClass(index);
 
                 }
 
@@ -131,12 +129,11 @@
 
         function hitRandom() {
 
-            var random = getRandomNumber();
+            var random = Math.floor((Math.random() * $scope.beeList.length));
 
             if ($scope.beeList[random].lifespan > 0) {
 
                 $scope.beeList[random].lifespan -= $scope.beeList[random].hitpoints;
-
                 if ($scope.beeList[random].lifespan < 0) {
 
                     $scope.beeList[random].lifespan = 0;
