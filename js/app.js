@@ -85,7 +85,7 @@
         };
 
         var updateClass = function(index) {
-            alert(index);
+
             $('.m-game__bee--' + index).addClass('active');
 
             $timeout( function(){
@@ -101,7 +101,7 @@
             $scope.beesInit = createBees(beeService);
 
             $scope.beeList = beeService.getBees();
-            
+
             updatePreviousList($scope.beeList);
 
         };
