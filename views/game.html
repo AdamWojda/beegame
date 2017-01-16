@@ -3,7 +3,20 @@
 
   <div class="m-game__bees" ng-init="initFunction()">
 
-    <div class="m-game__bee" ng-repeat="item in array" ng-class="item.type">
+    <div class="m-game__bee m-game__bee--{{ $index }}" ng-repeat="item in beeList track by $index" ng-class="item.type">
+
+        <div class="m-game__bee__body">
+
+          <div class="m-game__bee__body__line"></div>
+
+        </div>
+        
+        <div class="m-game__bee__wings">
+
+          <div class="m-game__bee__wing--right"></div>
+          <div class="m-game__bee__wing--left"></div>
+
+        </div>
 
       <div class="m-game__bee__name">{{item.type | capitalize}}</div> <div class="m-game__bee__life">({{item.lifespan}}/{{item.maxlifespan}})</div>
 

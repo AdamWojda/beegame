@@ -7,7 +7,9 @@ var gulp         = require('gulp'),
     uglify       = require('gulp-uglify'),
     concat       = require('gulp-concat'),
     notify       = require('gulp-notify'),
-    pngquant     = require('imagemin-pngquant');
+    pngquant     = require('imagemin-pngquant'),
+    webserver    = require('gulp-webserver');
+
 
 gulp.task('generate_styles', function(){
 

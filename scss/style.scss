@@ -1,5 +1,3 @@
-//compileOnSave: true, compileCompact, compactFilenamePattern: ../css/$1.css
-
 @charset 'UTF-8';
 
 // Variables
@@ -14,7 +12,7 @@
 @import 'generic/reset';
 
 // Element selectors, without classes
-//@import 'elements/base';
+@import 'elements/base';
 
 // Layouts
 @import 'layout/container';
@@ -23,7 +21,8 @@
 @import 'components/button';
 
 // Modules
-@import 'module/game';
+@import 'module/game',
+        'module/landscape';
 
 // States
 // @import 'state/is-active';
@@ -34,3 +33,6 @@
 
 // Vendor
 @import 'vendor/bootstrap';
+
+
+@import 'elements/keyframes';

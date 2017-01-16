@@ -1,10 +1,11 @@
-// main: /xampp/htdocs/multiszablon2/scss/style.scss
 
 html {
-	-webkit-font-smoothing: subpixel-antialiased;
-  -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-  font-size: 62.5%;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #00bfff;
+    height: 100%;
+    overflow: hidden;
 }
 
 body {
@@ -12,21 +13,13 @@ body {
     @include rem(font-size, 1.4rem);
 }
 
-main {
-
-}
-
-strong {
-
-}
-
 input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 1000px #000 inset;
-	-webkit-text-fill-color: $color-white !important;
+    -webkit-box-shadow: 0 0 0 1000px #000 inset;
+    -webkit-text-fill-color: $color-white !important;
 }
 
 img {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 * {

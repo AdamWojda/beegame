@@ -8,17 +8,17 @@
 
             $locationProvider.hashPrefix('');
 
-            $routeProvider
-                .when('/game', {
-                    templateUrl: 'views/game.html',
-                    controller: 'gameCtrl',
-                })
-                .otherwise({
-                    redirectTo: '/',
-                    templateUrl: 'views/default.html'
-                });
+            $routeProvider.when('/game', {
+                templateUrl: 'views/game.html',
+                controller: 'gameCtrl'
+            })
+            .otherwise({
+                redirectTo: '/',
+                 templateUrl: 'views/default.html'
+             });
 
         }
+
     ]);
 
     app.service('beeService', function($timeout) {
@@ -76,7 +76,29 @@
 
     };
 
-    app.controller('gameCtrl', function($scope, beeService) {
+    app.controller('gameCtrl', function($scope, $timeout, beeService) {
+
+        var previousBeeList = [];
+
+        var getRandomNumber = function() {
+            return Math.floor((Math.random() * $scope.beeList.length));
+        };
+
+        var updatePreviousList = function(newBeeList) {
+            angular.copy(newBeeList, previousBeeList);
+        };
+
+        var updateClass = function(index) {
+
+            $('.m-game__bee--' + index).addClass('active');
+
+            $timeout( function(){
+                $('.m-game__bee--' + index).removeClass('active');
+            }, 400)
+
+        };
+
+        updatePreviousList($scope.beeList);
 
         $scope.initFunction = function() {
 
@@ -84,58 +106,56 @@
 
             $scope.beeList = beeService.getBees();
 
-            $scope.array = [];
+        };
 
-            angular.forEach($scope.beeList, function(element) {
+        $scope.$watch('beeList', function(newVal, oldVal, scope) {
 
-                $scope.array.push(element);
+            if (newVal !== oldVal) {
 
-            });
+                for (var i = 0; i < newVal.length; i++) {
 
-        }
+                    if (angular.equals(newVal[i], previousBeeList[i]))
+                        continue;
 
-        function getRandomNumber () {
+                    var changedBee = newVal[i],
+                        index = newVal.indexOf(changedBee);
 
-          return Math.floor((Math.random() * $scope.array.length));
+                    updateClass(index);
+                    updatePreviousList(newVal);
 
-        }
-
-        function hitRandom () {
-          var random = getRandomNumber();
-
-          if ($scope.array[random].lifespan > 0) {
-
-            $scope.array[random].lifespan -= $scope.array[random].hitpoints;
-
-            if ($scope.array[random].lifespan < 0) {
-
-              $scope.array[random].lifespan = 0;
+                }
 
             }
 
-            if ($scope.array[random].lifespan === 0 && $scope.array[random].type === 'queen') {
+        }, true);
 
-                $scope.array.length = 0;
+        function hitRandom() {
 
-                beeService.resetBees();
+            var random = getRandomNumber();
 
-                createBees(beeService);
+            if ($scope.beeList[random].lifespan > 0) {
 
-                angular.forEach($scope.beeList, function(element) {
+                $scope.beeList[random].lifespan -= $scope.beeList[random].hitpoints;
 
-                    $scope.array.push(element);
+                if ($scope.beeList[random].lifespan < 0) {
 
-                    console.log($scope.array);
+                    $scope.beeList[random].lifespan = 0;
 
-                });
+                }
+
+                if ($scope.beeList[random].lifespan === 0 && $scope.beeList[random].type === 'queen') {
+
+                    beeService.resetBees();
+
+                    $scope.beesInit = createBees(beeService);
+
+                }
+
+            } else {
+
+                hitRandom();
 
             }
-
-          } else {
-
-            hitRandom();
-
-          }
 
         }
 
@@ -145,9 +165,8 @@
 
     app.filter('capitalize', function() {
         return function(input) {
-          return (!!input) ? input.charAt(0).toUpperCase() + input.substr(1).toLowerCase() : '';
+            return (!!input) ? input.charAt(0).toUpperCase() + input.substr(1).toLowerCase() : '';
         }
     });
-
 
 })();

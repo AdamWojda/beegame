@@ -1,0 +1,102 @@
+$derb-duration: random(1) - 0.4 + s;
+$derb-delay: 0.5s;
+
+.m-landscape {
+    position: relative;
+    filter: blur(10px);
+
+    &__cloud {
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        background: #fff;
+        border-radius: 100%;
+
+        &--1 {
+            top: 100px;
+            left: -150px;
+            box-shadow: #FFFFFF 65px -15px 0 -5px, #FFFFFF 25px -25px, #FFFFFF 30px 10px, #FFFFFF 60px 15px 0 -10px, #FFFFFF 85px 5px 0 -5px;
+            animation: cloud 10s linear infinite;
+        }
+
+        &--2 {
+            top: 200px;
+            left: -950px;
+            box-shadow: #FFFFFF 65px -15px 0 -5px, #FFFFFF 25px -25px, #FFFFFF 30px 10px, #FFFFFF 60px 15px 0 -10px, #FFFFFF 85px 5px 0 -5px;
+            animation: cloud 7s 2s linear infinite;
+        }
+
+        &--3 {
+            height: 120px;
+            width: 120px;
+            top: 300px;
+            left: -950px;
+            box-shadow: #FFFFFF 65px -15px 0 -5px, #FFFFFF 25px -25px, #FFFFFF 30px 10px, #FFFFFF 60px 15px 0 -10px, #FFFFFF 85px 5px 0 -5px;
+            animation: cloud2 5s 1s linear infinite;
+        }
+
+        &--4 {
+            height: 120px;
+            width: 120px;
+            top: 350px;
+            left: -950px;
+            box-shadow: #FFFFFF 65px -15px 0 -5px, #FFFFFF 25px -25px, #FFFFFF 30px 10px, #FFFFFF 60px 15px 0 -10px, #FFFFFF 85px 5px 0 -5px;
+            animation: cloud 10s 2s linear infinite;
+        }
+
+        &--5 {
+            top: 450px;
+            left: -150px;
+            box-shadow: #FFFFFF 65px -15px 0 -5px, #FFFFFF 25px -25px, #FFFFFF 30px 10px, #FFFFFF 60px 15px 0 -10px, #FFFFFF 85px 5px 0 -5px;
+            animation: cloud 4s linear infinite;
+        }
+    }
+
+    &__derb {
+        position: absolute;
+        background: #fff;
+        left: -150px;
+
+        &--1 {
+            width: 100px;
+            height: 3px;
+            top: 300px;
+            animation: derb $derb-duration $derb-delay ease-out infinite;
+        }
+
+        &--2 {
+            width: 75px;
+            height: 5px;
+            top: 170px;
+            animation: derb $derb-duration $derb-delay+-.1 ease-out infinite;
+        }
+
+        &--3 {
+            width: 60px;
+            height: 6px;
+            top: 275px;
+            animation: derb $derb-duration $derb-delay+.95 ease-out infinite;
+        }
+
+        &--4 {
+            width: 80px;
+            height: 3px;
+            top: 400px;
+            animation: derb $derb-duration $derb-delay+-.2 ease-out infinite;
+        }
+
+        &--5 {
+            width: 90px;
+            height: 5px;
+            top: 315px;
+            animation: derb $derb-duration $derb-delay+.3 ease-out infinite;
+        }
+
+        &--6 {
+            width: 100px;
+            height: 6px;
+            top: 265px;
+            animation: derb $derb-duration $derb-delay+.2 ease-out infinite;
+        }
+    }
+}
